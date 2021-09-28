@@ -1,0 +1,106 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{07F2BE26-80CA-415D-B452-F7C0D9E92909}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>WebAPIsql</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\WebApiEjemplo\config\applicationhost.config" />
+    <None Include=".vs\WebApiEjemplo\DesignTimeBuild\.dtbcache.v2" />
+    <None Include=".vs\WebApiEjemplo\v16\.suo" />
+    <None Include="WebApiEjemplo\appsettings.Development.json" />
+    <None Include="WebApiEjemplo\appsettings.json" />
+    <None Include="WebApiEjemplo\bin\Debug\net5.0\appsettings.Development.json" />
+    <None Include="WebApiEjemplo\bin\Debug\net5.0\appsettings.json" />
+    <None Include="WebApiEjemplo\bin\Debug\net5.0\WebApiEjemplo.deps.json" />
+    <None Include="WebApiEjemplo\bin\Debug\net5.0\WebApiEjemplo.runtimeconfig.dev.json" />
+    <None Include="WebApiEjemplo\bin\Debug\net5.0\WebApiEjemplo.runtimeconfig.json" />
+    <None Include="WebApiEjemplo\obj\Debug\net5.0\staticwebassets\WebApiEjemplo.StaticWebAssets.Manifest.cache" />
+    <None Include="WebApiEjemplo\obj\Debug\net5.0\WebApiEjemplo.AssemblyInfoInputs.cache" />
+    <None Include="WebApiEjemplo\obj\Debug\net5.0\WebApiEjemplo.assets.cache" />
+    <None Include="WebApiEjemplo\obj\Debug\net5.0\WebApiEjemplo.csproj.AssemblyReference.cache" />
+    <None Include="WebApiEjemplo\obj\Debug\net5.0\WebApiEjemplo.csproj.CopyComplete" />
+    <None Include="WebApiEjemplo\obj\Debug\net5.0\WebApiEjemplo.csproj.CoreCompileInputs.cache" />
+    <None Include="WebApiEjemplo\obj\Debug\net5.0\WebApiEjemplo.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="WebApiEjemplo\obj\Debug\net5.0\WebApiEjemplo.genruntimeconfig.cache" />
+    <None Include="WebApiEjemplo\obj\Debug\net5.0\WebApiEjemplo.MvcApplicationPartsAssemblyInfo.cache" />
+    <None Include="WebApiEjemplo\obj\Debug\net5.0\WebApiEjemplo.RazorTargetAssemblyInfo.cache" />
+    <None Include="WebApiEjemplo\obj\project.assets.json" />
+    <None Include="WebApiEjemplo\obj\project.nuget.cache" />
+    <None Include="WebApiEjemplo\obj\WebApiEjemplo.csproj.nuget.dgspec.json" />
+    <None Include="WebApiEjemplo\obj\WebApiEjemplo.csproj.nuget.g.props" />
+    <None Include="WebApiEjemplo\obj\WebApiEjemplo.csproj.nuget.g.targets" />
+    <None Include="WebApiEjemplo\Properties\launchSettings.json" />
+    <None Include="WebApiEjemplo\WebApiEjemplo.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="WebApiEjemplo\Autos\Automovil.cs" />
+    <Compile Include="WebApiEjemplo\Controllers\AutomovilController.cs" />
+    <Compile Include="WebApiEjemplo\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" />
+    <Compile Include="WebApiEjemplo\obj\Debug\net5.0\WebApiEjemplo.AssemblyInfo.cs" />
+    <Compile Include="WebApiEjemplo\obj\Debug\net5.0\WebApiEjemplo.MvcApplicationPartsAssemblyInfo.cs" />
+    <Compile Include="WebApiEjemplo\Program.cs" />
+    <Compile Include="WebApiEjemplo\Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WebApiEjemplo\bin\Debug\net5.0\Microsoft.OpenApi.dll" />
+    <Content Include="WebApiEjemplo\bin\Debug\net5.0\ref\WebApiEjemplo.dll" />
+    <Content Include="WebApiEjemplo\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll" />
+    <Content Include="WebApiEjemplo\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll" />
+    <Content Include="WebApiEjemplo\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll" />
+    <Content Include="WebApiEjemplo\bin\Debug\net5.0\WebApiEjemplo.dll" />
+    <Content Include="WebApiEjemplo\bin\Debug\net5.0\WebApiEjemplo.exe" />
+    <Content Include="WebApiEjemplo\bin\Debug\net5.0\WebApiEjemplo.pdb" />
+    <Content Include="WebApiEjemplo\obj\Debug\net5.0\apphost.exe" />
+    <Content Include="WebApiEjemplo\obj\Debug\net5.0\ref\WebApiEjemplo.dll" />
+    <Content Include="WebApiEjemplo\obj\Debug\net5.0\staticwebassets\WebApiEjemplo.StaticWebAssets.xml" />
+    <Content Include="WebApiEjemplo\obj\Debug\net5.0\WebApiEjemplo.csproj.FileListAbsolute.txt" />
+    <Content Include="WebApiEjemplo\obj\Debug\net5.0\WebApiEjemplo.dll" />
+    <Content Include="WebApiEjemplo\obj\Debug\net5.0\WebApiEjemplo.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\WebAPIsql\v16\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
